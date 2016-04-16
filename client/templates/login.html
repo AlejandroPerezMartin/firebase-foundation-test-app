@@ -1,0 +1,27 @@
+---
+name: login
+url: /login
+controller: loginController
+---
+
+<div class="grid-container">
+    <h1>Login</h1>
+
+        <form>
+        <label>
+            Email/Username
+            <input type="text" placeholder="Enter email address" ng-model="loginEmail">
+        </label>
+
+        <label>
+            Password
+            <input type="password" placeholder="Enter password" ng-model="loginPassword">
+        </label>
+
+        <button class="button" ng-model="loginButton" ng-disabled="!loginEmail || !loginPassword" ng-click="loginUser()">Login</button>
+        <button class="success button" ng-model="registerButton" ng-click="registerUser()">Register</button>
+
+
+        </form>
+
+</div>
